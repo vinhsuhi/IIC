@@ -1,0 +1,2 @@
+python -m code.scripts.cluster.cluster_greyscale \
+--dataset MNIST --dataset_root /scratch/local/ssd/xuji/MNIST --model_ind 665 --arch ClusterNet6c --num_epochs 3200 --output_k 25 --gt_k 10 --lr 0.0001 --lamb 1.0 --num_sub_heads 5 --batch_sz 350 --num_dataloaders 5 --crop_orig --crop_other --tf1_crop centre_half --tf2_crop random --tf1_crop_sz 20  --tf2_crop_szs 16 20 24 --input_sz 24 --rot_val 25 --no_flip --mode IID+ --batchnorm_track 
